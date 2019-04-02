@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Joshua Eyenike Animation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="file:///Users/user/Documents/Photos/IMG_5996.JPG" />
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="main.css" />-->
+   <style>
+       .textOverImg{
+           position: relative;
+           width: 400px;
+           height: 250px;
+           float: left;
+           margin: 4px;
+           background-size: 100%;
+           transition: 0.5s;
+       }
+
+       .textOverImg:hover{
+           background-size: 110%;
+       }
+       
+       .textOverImg::after{
+           position: absolute;
+           top: 90%;
+           bottom: 0;
+           left: 0;
+           right: 0;
+           word-wrap: break-word;
+           white-space: pre-wrap;
+           overflow: hidden;
+           background-color: rgba(0, 0, 0, 0.5);
+           color: #fff;
+           padding: 0 8px;
+           content: attr(data-text); 
+           transition: 0.5s
+       }
+
+       .textOverImg:hover::after{
+           top: 0;
+           padding: 8px;
+           background-color: (0, 0, 0, 0.6);
+       }
+
+       .textOverImg::first-line{
+           color: lightskyblue;
+           font-weight: bold;
+           font-size: 1.5em;
+       }
+
+   </style>
+</head>
+<body>
+    <div class="textOverImg"
+    style="background-image: url(file:///Users/user/Documents/Photos/IMG_5996.JPG)"
+    data-text="I am excited
+to learn about the Meltwater Entrepreneurial School of Technology program for young entrepreneurs like myself looking for an opportunity to express my profound skills. I am pleased to apply because I have always thought of advancing my knowledge because of the learning environment and the proper structure put in place to aid like-minded entrepreneurs"
+    >
+    </div>
+    <div class="textOverImg"
+    style="background-image: url(file:///Users/user/Documents/Photos/IMG_5995.JPG)"
+    data-text="This opportunity
+would avail me the opportunity to learn a new culture and interact with the environment where the training program would be held.To be chosen to be a part of this life-transforming program would improve my creative thinking and also help me to  be innovative in the quest of being the best at what I do in terms of technology and life generally and it would be a great privilege to contribute my quota in building a more prosperous nation and indeed the African continent">
+    </div>
+</body>
+</html>

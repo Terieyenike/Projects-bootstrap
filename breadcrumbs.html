@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+    <meta charset="utf-8">
+    <head>
+        <title>VisionIt built with bootstrap</title>
+        <meta name="description" content="VisionIt">
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <div>
+            <!--<h1>Demo For Breadcrumb</h1>
+            <h1 class="demo">Demo For Breadcrumb</h1>-->
+            <!--<h1 id="h1-id">Demo For Breadcrumb</h1>-->
+            <!--<h1 custom="banner">Demo For Breadcrumb</h1>-->
+           <!-- <h1 class="col-md-4">h1 tagging</h1>-->
+           <h1>DEfine hearing</h1>
+            </div>
+        </header>
+        
+        <div id="target">Demo Element</div>
+
+        <div id="display">Another Demo</div>
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li class="active">Verge</li>
+            </ol>
+        </div>
+        
+        
+        <script src="jquery/jquery-3.2.1.min.js"></script>
+        <script>
+            $(function(){
+                // alert("jquery is awesome!");
+               // $('.demo').text('breadcrumb activated!');
+               // $('#h1-id').text('breadcrumb activated!');
+               // $('.demo').text('breadcrumb activated!');
+               // $('[custom="banner"]').text('Found by equality');
+               // $('[class^="col"]').text('Found by start with');
+                // $('[class*="md"]').text('found start with');
+
+               $('header > h1').text('storage capacity');
+               $('header h1').text('structure');
+
+               // update attribute value
+               $('#target').attr('style', 'color: blue');
+
+               // read attribute value
+               //var style = $('#target').attr('style');
+              // alert(style);
+
+              $('#target').removeAttr('style');
+
+              // update html will use the html parameter
+              $('#target').html('<u>Underline The Content</u>');
+
+              // click event handler
+             // $('#target').click(function(){
+               //   $('#display').text('Div was clicked');
+             // });
+
+             // click event handler, you can only effect change to one of the div id pr you can generally effect the entire div.
+             $('#display').click(function(){
+                 // this is the *DOM element* of the item that raised the event
+                 // convert to jquery object
+                $(this).text('Clicked');
+             });
+            });
+        </script>
+        <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>
